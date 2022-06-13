@@ -6,3 +6,10 @@ lazy val root = (project in file("."))
   .settings(
     name := "h2anorm"
   )
+
+libraryDependencies ++= Seq(
+  "org.playframework.anorm" %% "anorm" % "2.6.10",
+  "com.h2database" % "h2" % "2.1.212"
+)
+
+
