@@ -21,7 +21,7 @@ object Main extends App {
   private def insertDbData(): Unit = {
     val sqlIns =
       """insert into person(name, last_name)
-                values ('Juan Manuel', 'Jaramillo')"""
+         values ('Juan Manuel', 'Jaramillo')"""
     SQL(sqlIns).execute()
   }
 
